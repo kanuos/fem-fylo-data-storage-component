@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <meta
+      name="description"
+      content="FrontEnd Mentor Fylo data storage component challenge solution by Sounak" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <meta name="description" content="FrontEnd Mentor Fylo data storage component challenge solution by Sounak">
-  <title>Frontend Mentor | Fylo data storage component</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
-</head>
+  <body>
+    <main>
+      <section class="main">
+        <div>
+          <h1>Fylo</h1>
+          <img src="./images/logo.svg" alt="Brand logo" />
+          <ul>
+            <li>
+              <img src="./images/icon-document.svg" alt="Document" />
+            </li>
+            <li>
+              <img src="./images/icon-folder.svg" alt="Folder" />
+            </li>
+            <li>
+              <img src="./images/icon-upload.svg" alt="Upload" />
+            </li>
+          </ul>
+        </div>
+      </section>
 
-<body>
+      <section class="detail">
+        <h2>185 GB Left</h2>
+        <p>You’ve used 815 GB of your storage</p>
+        <div>
+          <div class="progress">
+            <div class="progress__full"></div>
+            <span class="cursor"></span>
+          </div>
+          <ul>
+            <li>
+              <small> 0 GB </small>
+            </li>
+            <li>
+              <small> 1000 GB </small>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-
-  0 GB
-  1000 GB
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
-
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.
+    </footer>
+  </body>
 </html>
