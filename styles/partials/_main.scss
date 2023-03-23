@@ -1,0 +1,62 @@
+@import "../utils/mixins";
+
+.main {
+  width: 90%;
+  div {
+    background-color: $neutral-3;
+    padding: $gap-lg;
+    border-radius: $gap-sm;
+    border-top-right-radius: $curved-border;
+    margin: auto;
+    width: 100%;
+    max-width: $main-card-width;
+    filter: drop-shadow($shadow);
+
+    display: grid;
+    gap: $gap-lg;
+
+    h1 {
+      color: aqua;
+      @include sr-only;
+    }
+
+    // logo
+    img {
+      height: 100%;
+      width: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    ul {
+      list-style: none;
+      width: fit-content;
+      @include flex;
+      gap: 1rem;
+      li {
+        height: $icon-img;
+        width: $icon-img;
+        background-color: $neutral-4;
+        @include flex;
+        aspect-ratio: 1 / 1;
+        border-radius: $gap-sm;
+        transition: all 0.25s ease;
+        cursor: pointer;
+
+        img {
+          height: 40%;
+          width: auto;
+          object-fit: cover;
+          display: block;
+          transition: all 0.5s ease;
+          pointer-events: none;
+        }
+
+        &:hover {
+          filter: drop-shadow($shadow);
+          transform: rotateY(180deg) translateY(calc($baseFontSize / -4));
+        }
+      }
+    }
+  }
+}

@@ -5,4 +5,9 @@
     background-image: url(../images/bg-desktop.png),
       linear-gradient(to bottom, $neutral-4, $neutral-4);
   }
+
+  main {
+    width: 100%;
+    @include flex(row);
+  }
 }

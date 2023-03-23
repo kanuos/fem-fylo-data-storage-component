@@ -22,4 +22,15 @@ body {
 }
 
 @import "./partials/footer";
+
+@import "./partials/main";
+@import "./utils/mixins";
+
+main {
+  width: 100%;
+  @include flex(column);
+  gap: $baseFontSize;
+  max-width: calc($baseFontSize * 65);
+}
+
 @import "./partials/query";

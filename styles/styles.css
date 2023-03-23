@@ -22,11 +22,95 @@ body {
 footer,
 .attribution {
   position: absolute;
-  top: -9999px;
-  left: -9999px;
-  opacity: 0;
-  scale: 0;
-  z-index: -9999;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.main {
+  width: 90%;
+}
+.main div {
+  background-color: hsl(228, 56%, 26%);
+  padding: 28px;
+  border-radius: 7px;
+  border-top-right-radius: 84px;
+  margin: auto;
+  width: 100%;
+  max-width: 322px;
+  filter: drop-shadow(0 1px 1rem rgba(0, 0, 0, 0.25));
+  display: grid;
+  gap: 28px;
+}
+.main div h1 {
+  color: aqua;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.main div img {
+  height: 100%;
+  width: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main div ul {
+  list-style: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+.main div ul li {
+  height: 42px;
+  width: 42px;
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  aspect-ratio: 1/1;
+  border-radius: 7px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+.main div ul li img {
+  height: 40%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: all 0.5s ease;
+  pointer-events: none;
+}
+.main div ul li:hover {
+  filter: drop-shadow(0 1px 1rem rgba(0, 0, 0, 0.25));
+  transform: rotateY(180deg) translateY(-3.5px);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 910px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -34,5 +118,12 @@ footer,
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../images/bg-desktop.png), linear-gradient(to bottom, hsl(229, 57%, 11%), hsl(229, 57%, 11%));
+  }
+  main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=styles.css.map */

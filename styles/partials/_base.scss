@@ -5,3 +5,19 @@ $neutral-1: hsl(243, 100%, 93%);
 $neutral-2: hsl(229, 7%, 55%);
 $neutral-3: hsl(228, 56%, 26%);
 $neutral-4: hsl(229, 57%, 11%);
+
+// base units
+$baseFontSize: 14px; // simulating 1rem
+$gap-sm: calc($baseFontSize / 2);
+$gap-lg: calc($baseFontSize * 2);
+$border-radius: calc($baseFontSize / 2);
+
+// shadow
+$shadow: 0 1px 1rem rgba(0 0 0 / 0.25);
+
+// main section units
+$main-card-width: calc($baseFontSize * 23); // simulating 23rem
+$curved-border: calc($baseFontSize * 6);
+$icon-img: calc($baseFontSize * 3);
+
+
