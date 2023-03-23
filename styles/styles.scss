@@ -1,3 +1,4 @@
+@import "./partials/base";
 *,
 *::before,
 *::after {
@@ -6,3 +7,19 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+
+body {
+  height: auto;
+  min-height: 100vh;
+  min-height: d100vh;
+  background-image: url(../images/bg-mobile.png),
+    linear-gradient(to bottom, $neutral-4, $neutral-4);
+  background-size: cover;
+  background-position: bottom;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+@import "./partials/footer";
+@import "./partials/query";

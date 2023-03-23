@@ -5,4 +5,34 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+}
+
+body {
+  height: auto;
+  min-height: 100vh;
+  min-height: d100vh;
+  background-image: url(../images/bg-mobile.png), linear-gradient(to bottom, hsl(229, 57%, 11%), hsl(229, 57%, 11%));
+  background-size: cover;
+  background-position: bottom;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+footer,
+.attribution {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  scale: 0;
+  z-index: -9999;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-desktop.png), linear-gradient(to bottom, hsl(229, 57%, 11%), hsl(229, 57%, 11%));
+  }
 }/*# sourceMappingURL=styles.css.map */
