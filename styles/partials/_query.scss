@@ -1,7 +1,5 @@
 @media screen and (min-width: 1024px) {
   body {
-    background-size: contain;
-    background-repeat: no-repeat;
     background-image: url(../images/bg-desktop.png),
       linear-gradient(to bottom, $neutral-4, $neutral-4);
   }
@@ -9,5 +7,49 @@
   main {
     width: 100%;
     @include flex(row);
+    align-items: flex-end;
+    .main {
+      flex-basis: 40%;
+      div {
+        max-width: none;
+      }
+    }
+    .detail {
+      flex-basis: 60%;
+      max-width: none;
+
+      h2 {
+        & {
+          top: 0;
+          right: 0;
+          left: auto;
+          bottom: auto;
+          z-index: 2;
+          border-bottom-right-radius: 0;
+          transform: translate(-20%, -75%);
+        }
+        &::after {
+          content: "";
+          height: $detail-unit;
+          width: $detail-unit;
+          position: absolute;
+          background-color: $neutral-1;
+          right: 0;
+          bottom: 0;
+          transform: translate(0, 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-desktop.png),
+      linear-gradient(to bottom, $neutral-4, $neutral-4);
+    background-attachment: fixed;
   }
 }

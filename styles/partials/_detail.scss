@@ -1,0 +1,99 @@
+.detail {
+  @include flex(column);
+  align-items: flex-start;
+  gap: $gap-sm;
+  background-color: $neutral-3;
+  padding: $gap-lg;
+  filter: drop-shadow($shadow);
+  border-radius: $border-radius;
+  position: relative;
+  flex-basis: 100%;
+  width: 90%;
+  max-width: $main-card-width;
+
+  h2 {
+    padding: $gap-sm $gap-lg;
+    background-color: $neutral-1;
+    border-radius: $border-radius;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 75%);
+
+    color: $neutral-2;
+    font-weight: 400;
+    font-size: calc($baseFontSize * 0.75);
+    @include flex;
+    gap: $gap-sm;
+
+    strong {
+      color: $neutral-4;
+      font-size: calc($baseFontSize * 2.5);
+    }
+  }
+
+  p {
+    font-size: $baseFontSize;
+    color: $neutral-1;
+    text-align: center;
+
+    & > span {
+      opacity: 0.6;
+    }
+
+    & > strong {
+      font-weight: 700;
+      opacity: 1;
+    }
+  }
+
+  div {
+    width: 100%;
+
+    // progress bar
+    .progress {
+      background-color: $neutral-4;
+      width: 100%;
+      height: $baseFontSize;
+      border-radius: $detail-unit;
+      padding: $progress-padding;
+      overflow: hidden;
+      @include flex;
+      justify-content: flex-start;
+      position: relative;
+      margin: $gap-sm 0;
+
+      &__full {
+        width: $fill-percentage;
+        height: 100%;
+        border-radius: $detail-unit;
+        background-image: linear-gradient(to right, $gradient-1, $gradient-2);
+      }
+
+      .cursor {
+        position: absolute;
+        height: 40%;
+        width: auto;
+        top: 50%;
+        right: calc(100% - $fill-percentage);
+        transform: translate(-50%, -50%);
+        aspect-ratio: 1 / 1;
+        background-color: $neutral-1;
+        border-radius: 50%;
+      }
+    }
+
+    ul {
+      @include flex;
+      justify-content: space-between;
+      width: 100%;
+      list-style: none;
+
+      li > small {
+        font-size: calc($baseFontSize * 0.75);
+        color: $neutral-1;
+        font-weight: 700;
+      }
+    }
+  }
+}

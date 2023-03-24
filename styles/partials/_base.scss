@@ -1,5 +1,6 @@
 // color variables
-$gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+$gradient-1: hsl(6, 100%, 80%);
+$gradient-2: hsl(335, 100%, 65%);
 
 $neutral-1: hsl(243, 100%, 93%);
 $neutral-2: hsl(229, 7%, 55%);
@@ -20,4 +21,7 @@ $main-card-width: calc($baseFontSize * 23); // simulating 23rem
 $curved-border: calc($baseFontSize * 6);
 $icon-img: calc($baseFontSize * 3);
 
-
+// detail section units
+$fill-percentage: 75%;
+$detail-unit: calc($baseFontSize * 1.5);
+$progress-padding: 2px;

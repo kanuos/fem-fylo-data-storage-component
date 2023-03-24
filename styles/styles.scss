@@ -33,4 +33,5 @@ main {
   max-width: calc($baseFontSize * 65);
 }
 
+@import "./partials/detail";
 @import "./partials/query";
